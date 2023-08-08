@@ -1,0 +1,165 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+
+
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+
+    --text-very-dark-blue: hsl(237, 12%, 33%);
+    --text-dark-blue: hsl(240, 6%, 50%);
+
+    --divider-light-blue: hsl(240, 5%, 91%);
+
+    --font-size-body: 13px;
+    --font-family: 'Kumbh Sans', sans-serif;
+    ;
+}
+
+html,
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-body);
+   
+    
+
+}
+
+body {
+    min-height: 100vh;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, var(--soft-blue), var(--soft-violet));
+    
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    
+    
+    
+   
+}
+
+div#container {
+    gap: 20px;
+    width: 350px;
+    
+    background-image: url(../images/bg-pattern-mobile.svg) ;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px 20px 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.26);
+    margin:120px 20px 30px 20px;
+    
+}
+
+div#image-woman-div{
+    
+    width: 250px;
+    height: 100px;
+    position: relative;
+}
+img#image-woman{
+    width: 100%;
+    
+    position: absolute;
+    left: 50%;
+    top: -15%;
+    transform: translate(-50%, -50%);
+
+    
+}
+
+div#container h1{
+    
+    font-size: 2.7em;
+}
+
+div#info{
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+
+
+}
+
+div#container div.conteudos{
+    
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+p.titulo-pergunta img{
+    width: 15px;
+    height: 15px;
+    
+}
+
+div#container div.conteudos p.titulo-pergunta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    font-size: 1.1em;
+    
+    
+}
+
+div#container div.conteudos p.titulo-pergunta, div#container div.conteudos .respostas{
+   
+    padding: 20px 0px;
+    border-bottom: 1px solid var(--divider-light-blue);
+    color: var(--text-dark-blue);
+}
+
+
+div#container div.conteudos .respostas{
+    
+    
+   
+}
+.giro{
+    transform: rotate(180deg);
+}
+
+.hidden{
+    display: none;
+}
+
+.bolder{
+    font-weight: 700;
+    color: var(--text-very-dark-blue);
+    
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
