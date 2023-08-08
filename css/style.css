@@ -72,13 +72,31 @@ div#container {
     
 }
 
-div#image-woman-div{
+#image-woman-div{
     
-    width: 250px;
+    max-width: 250px;
+    min-width: 100px;
+    
     height: 100px;
-    position: relative;
+    
 }
-img#image-woman{
+
+#img{
+    background-image: url(../images/illustration-woman-online-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 250px;
+    
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    transform: translate(-50%,-50%);
+    
+}
+
+
+/* img#image-woman{
     width: 100%;
     
     position: absolute;
@@ -87,14 +105,15 @@ img#image-woman{
     transform: translate(-50%, -50%);
 
     
-}
+} */
 
 div#container h1{
-    
+    align-self: center;
     font-size: 2.7em;
 }
 
 div#info{
+    
     
     display: flex;
     flex-direction: column;
