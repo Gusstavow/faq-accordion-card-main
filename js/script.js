@@ -19,16 +19,22 @@ conteudos.forEach((item) => {
 
         item.children[0].classList.toggle("bolder")
 
+        //faz o giro da seta 
+        item.children[0].children[0].classList.toggle("giro")
+
+       
       
     })
+
+    
 })
 
 //faz o giro da seta
-perguntas.forEach((arrow) => {
-    arrow.addEventListener("click",()=>{
-        arrow.children[0].classList.toggle("giro")
+// perguntas.forEach((arrow) => {
+//     arrow.addEventListener("click",()=>{
+//         arrow.children[0].classList.toggle("giro")
     
 
-    })
+//     })
     
-})
+// })
